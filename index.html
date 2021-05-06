@@ -791,7 +791,6 @@ li {
                             <!--ko foreach: links-->
                             <li>
                                 <a data-bind="attr: { href: url }, click: function(){ 
-                                        _gaq.push(['_trackEvent',$parent.title, label, url]);
                                         return true;
                                         }, text: label" target="_blank"></a>
                             </li>
@@ -925,23 +924,19 @@ li {
                     title: '收板',
                     dependsOn: [2],
                     links: [{
-                        label: 'Sass vs. LESS',
-                        url: 'http://css-tricks.com/sass-vs-less/'
-                    }, {
-                        label: 'LESS',
-                        url: 'http://lesscss.org/'
-                    }, {
-                        label: 'Sass',
-                        url: 'http://sass-lang.com/'
-                    }, {
-                        label: 'Stylus',
-                        url: 'http://learnboost.github.io/stylus/'
+                        label: '【滑板教学】会滑行就可以学，最实用的滑行收板动作教学~~~',
+                        url: 'https://www.bilibili.com/video/BV1X5411s7Xv'
+
+                    },
+                        {
+                        label: '八种酷酷的收板方式',
+                        url: 'https://www.bilibili.com/video/BV1es411w74Q'
                     }],
-                    maxPoints: 2,
+                    maxPoints: 1,
                     rankDescriptions: [
-                        '你熟悉变量和嵌套语法的使用。', '你能使用一些高级工具如mix-ins，也会自己写一部分。'
+                        '你可以不像一个菜鸟滑手：停下、弯腰、拿起板子'
                     ],
-                    description: '像LESS和SASS这样的预处理器帮你编写更加结构化和高效的CSS代码，如使用变量、函数、循环和嵌套。',
+                    description: '走路与滑行来回切换',
                     stats: [{
                         title: '魅力',
                         value: 2
