@@ -31,7 +31,7 @@ body {
 header {
     position: relative;
     z-index: 20;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Microsoft YaHei', Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     margin: 30px 0px 30px 0px;
     text-align: center;
@@ -766,7 +766,7 @@ li {
 </head>
 <body>
 <div class="ltIE9-hide">
-    <header>技能树</header>
+    <header>滑板技能树</header>
     <div class="page">
         <div class="talent-tree">
             <h2 class="start-helper" data-bind="css:{active:noPointsSpent}">开始吧!</h2>
@@ -831,7 +831,7 @@ li {
             </div>
             <div class="details">
                 <input data-bind="value: avatarName" class="h2">
-                <div class="level">Level <span data-bind="  text: level" class="value"></span> Web 程序员</div>
+                <div class="level">Level <span data-bind="  text: level" class="value"></span> 滑手</div>
                 <div data-bind="text: talentSummary" class="talent-summary"></div>
                 <ul class="stats">
                     <!--ko foreach: stats-->
@@ -842,22 +842,19 @@ li {
             </div>
         </div>
         <div class="sign-off">
-            <h2>常用网站链接：</h2>
+            <h2>来看看我：</h2>
             <ul>
-                <li><a href="https://alistapart.com/" target="_blank">A List Apart</a>
+                <li><a href="https://space.bilibili.com/291947905" target="_blank">BILIBILI</a>
                 </li>
-                <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a>
+                <li><a href="https://www.zhihu.com/people/cheng-zi-hong-97" target="_blank">知乎</a>
                 </li>
-                <li><a href="https://www.codecademy.com/" target="_blank">Code Academy</a>
+                <li><a href="https://chenzihong-gavin.github.io/" target="_blank">个人博客</a>
                 </li>
-                <li><a href="https://www.stackoverflow.com/" target="_blank">Stack Overflow</a>
-                </li>
-                <li><a href="https://www.reddit.com/r/web_design/" target="_blank">reddit webdesign</a>
-                </li>
+                <li><a href="https://github.com/ChenZiHong-Gavin" target="_blank">GITHUB</a>
             </ul>
-            <h3>享受学习</h3>
-            <a href="https://www.352inc.com/" target="_blank" class="logo-352">
-                <img src="img/logo352.png" alt="352">
+            <h2>给我投喂</h2>
+            <a href="https://github.com/ChenZiHong-Gavin">
+                <img src="img/pay.png" alt="payment">
             </a>
         </div>
     </div>
@@ -1652,8 +1649,14 @@ li {
                         self.newbMode();
 
                         var hashParts = hash.split(hashDelimeter);
-                        if (hashParts[2]) self.portrait(Number(hashParts[2])); //use the segment after the second delimeter as the portrait index
-                        if (hashParts[3]) self.avatarName(hashParts[3]); //use the segment after the third delimeter as the avatar name
+                        if (hashParts[2]) 
+                            self.portrait(Number(hashParts[2])); //use the segment after the second delimeter as the portrait index
+                        if (hashParts[3]) 
+                        {
+                            self.avatarName(decodeURI(hashParts[3]));
+
+                        }
+                         //use the segment after the third delimeter as the avatar name
 
                         var s = hashParts[1]; //use the segment after the first delimeter as the skill hash
 
