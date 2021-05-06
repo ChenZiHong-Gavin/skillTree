@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <title>滑板技能树</title>
+<link rel="shortcut icon" href="./img/logo.png">
 <style>
 
 /* Less （Leaner Style Sheets 的缩写） 是一门向后兼容的 CSS 扩展语言。
@@ -870,22 +871,19 @@ li {
         ns.data = {
             skills: [{
                     id: 1,
-                    title: 'HTML',
-                    description: '超文本标记语言（Hypertext Markup Language），用于构建网页的主体语言。',
+                    title: '买一块滑板',
+                    description: '当你拥有了一块滑板，一切从这里开始了',
                     rankDescriptions: [
-                        '你了解如何创建一个简单的静态页面。', '你了解如何把页面链接在一起，设置多列布局，知道如何使用表单、表格和媒体（图片、视频、音频）.'
+                        '你知道如何分辨专业板和玩具板', '你了解滑板是由哪几个部分组成的','你知道如何搭配一块适合自己的滑板'
                     ],
                     links: [{
-                        label: 'HTML.net Tutorials',
-                        url: 'http://www.html.net/tutorials/html/'
+                        label: '【滑板视频】up主用的什么滑板？新手买什么滑板好？？？',
+                        url: 'https://www.bilibili.com/video/BV1eE41187i6?from=search&seid=15296292863869150823'
                     }, {
-                        label: 'Sublime Text 3，跨平台轻量级的编辑器，免费',
-                        url: 'http://www.sublimetext.com/'
-                    }, {
-                        label: 'WebStorm，最智能的HTML5编辑器，很棒的语法提示功能，需要商业授权',
-                        url: 'http://www.sublimetext.com/'
+                        label: '某滑手耗时8小时只为拍摄滑板组装定格动画',
+                        url: 'https://www.bilibili.com/video/BV1q4411B7GM?from=search&seid=5483120130861820055'
                     }],
-                    maxPoints: 2,
+                    maxPoints: 3,
                     stats: [{
                         title: '智力',
                         value: 1
@@ -895,19 +893,21 @@ li {
                     }, {
                         title: '力量',
                         value: 1
-                    }]
+                    }],
+                    talents: ['有老婆的人']
                 },
 
                 {
                     id: 2,
-                    title: 'CSS',
+                    title: '滑行和转弯',
+                    description: '踩上滑板，感受风的温度',
                     dependsOn: [1],
                     links: [{
-                        label: 'CSS Tutorials',
-                        url: 'http://www.htmldog.com/guides/css/'
+                        label: '【滑板教学】新手应该怎么学习滑行？？？',
+                        url: 'https://www.bilibili.com/video/BV1qT4y1F7xd?from=search&seid=15007634551498557142'
                     }, {
-                        label: 'Can I use... (浏览器兼容性在线查询)',
-                        url: 'http://caniuse.com/#cats=CSS'
+                        label: '【教程】滑板第一课-站姿、滑行、转弯、刹车 HOW TO SKATEBOARD FOR BEGINNERS',
+                        url: 'https://www.bilibili.com/video/BV1sW411J7vP?from=search&seid=15007634551498557142'
                     }],
                     maxPoints: 2,
                     stats: [{
@@ -915,15 +915,14 @@ li {
                         value: 3
                     }],
                     rankDescriptions: [
-                        '你熟悉CSS格式化和盒子模型的基础知识。', '你熟悉媒体查询（media queries）和响应式设计，知道如何适配多种设备。'
+                        '你可以后脚蹬地获得滑行的速度', '你知道怎样调整重心使滑板转向'
                     ],
-                    description: '级联样式表（CSS，也称层叠样式表）是一种用来为网页添加样式/风格的语言。CSS规则用来设定目标元素在HTML文档中的展示方式，如字体，颜色，间距和大小。',
-                    talents: ['Stylish']
+                    talents: ['崭新的滑手']
                 }, 
                 
                 {
                     id: 3,
-                    title: 'CSS 工具',
+                    title: '收板',
                     dependsOn: [2],
                     links: [{
                         label: 'Sass vs. LESS',
@@ -954,7 +953,7 @@ li {
                 
                 {
                     id: 4,
-                    title: '精通网页设计',
+                    title: 'MANUAL',
                     dependsOn: [2],
                     description: '你可以把设计想法实现为HTML文档和CSS样式。',
                     stats: [{
@@ -965,7 +964,7 @@ li {
                 
                 {
                     id: 5,
-                    title: 'jQuery 动效',
+                    title: 'KICK TURN',
                     dependsOn: [4],
                     links: [{
                         label: 'Codecademy jQuery',
@@ -994,7 +993,7 @@ li {
 
                 {
                     id: 6,
-                    title: '搜索引擎优化(SEO)',
+                    title: '刹车',
                     dependsOn: [1],
                     links: [{
                         label: 'Search Engine Optimization (Google)',
@@ -1016,7 +1015,7 @@ li {
                     }]
                 }, {
                     id: 7,
-                    title: '数据分析',
+                    title: 'powerslide 横刹',
                     dependsOn: [6],
                     links: [{
                         label: '10个搜索引擎优化分析工具',
@@ -1044,7 +1043,7 @@ li {
 
                 {
                     id: 8,
-                    title: 'Javascript',
+                    title: '荡板',
                     dependsOn: [1],
                     links: [{
                         label: 'JavaScript Tutorial',
@@ -1068,7 +1067,7 @@ li {
                 
                 {
                     id: 9,
-                    title: 'JS库和开发框架',
+                    title: '倒滑180',
                     dependsOn: [8],
                     maxPoints: 2,
                     rankDescriptions: [
@@ -1087,7 +1086,7 @@ li {
                 
                 {
                     id: 10,
-                    title: '精通前端开发',
+                    title: 'NORMAL SWITCH FAKIE NOLLIE',
                     dependsOn: [9],
                     stats: [{
                         title: '敏捷度',
@@ -1097,7 +1096,7 @@ li {
 
                 {
                     id: 11,
-                    title: '服务器端编程',
+                    title: 'OLLIE',
                     dependsOn: [1],
                     links: [{
                         label: '服务器端脚本百科',
@@ -1112,7 +1111,7 @@ li {
                 
                 {
                     id: 12,
-                    title: '服务器端框架',
+                    title: 'FS/BS 180 OLLIE',
                     dependsOn: [11],
                     links: [{
                         label: 'Web应用程序框架的比较',
@@ -1137,7 +1136,7 @@ li {
 
                 {
                     id: 13,
-                    title: '数据库操作'
+                    title: 'SHOVE IT'
                         //, dependsOn: [1]
                         ,
                     links: [{
@@ -1163,7 +1162,7 @@ li {
                 
                 {
                     id: 14,
-                    title: '数据库管理进阶',
+                    title: 'POP SHOVE IT',
                     dependsOn: [13],
                     links: [{
                         label: '存储过程 Wiki',
@@ -1201,7 +1200,7 @@ li {
 
                 {
                     id: 15,
-                    title: '精通服务器端开发',
+                    title: 'KICKFLIP/HEELFLIP',
                     dependsOn: [12, 14],
                     description: '你有能力设计和构建应用程序的后端来有效地存储和检索数据。',
                     stats: [{
@@ -1212,7 +1211,7 @@ li {
                 
                 {
                     id: 16,
-                    title: '服务访问控制和用户身份验证/授权',
+                    title: 'BIG SPIN',
                     dependsOn: [15],
                     links: [{
                         label: 'OpenID Wiki (authentication)',
@@ -1229,40 +1228,11 @@ li {
                     talents: ['Truthseeker']
                 }, 
                 
-                {
-                    id: 17,
-                    title: 'Ajax和开放接口(API)',
-                    dependsOn: [10, 15],
-                    links: [{
-                        label: 'AJAX (programming) Wiki',
-                        url: 'http://en.wikipedia.org/wiki/Ajax_(programming)'
-                    }, {
-                        label: 'Web Service Wiki',
-                        url: 'http://en.wikipedia.org/wiki/Web_service'
-                    }, {
-                        label: '表述性状态传递 (REST) Wiki',
-                        url: 'http://en.wikipedia.org/wiki/Representational_state_transfer'
-                    }, {
-                        label: 'Yii2快速构建RESTful Web服务功能简介',
-                        url: 'http://blog.csdn.net/iefreer/article/details/38277475'
-                    }],
-                    description: '使用Ajax请求可以使网页实现异步更新，即局部更新，而无需加载整个页面。使用开放接口提供在线服务可以建立系统应用生态环境，主流的Web服务技术有RESTful、SOAP和XML-RPC，其中由于RESTful的简洁性和可伸缩性，更适合在互联网领域使用。',
-                    stats: [{
-                        title: '力量',
-                        value: 1
-                    }, {
-                        title: '敏捷度',
-                        value: 1
-                    }, {
-                        title: '智力',
-                        value: 1
-                    }],
-                    talents: ['Mindweaver']
-                },
+
 
                 {
                     id: 18,
-                    title: '用户需求发现',
+                    title: '十分熟练的滑行',
                     maxPoints: 2,
                     rankDescriptions: [
                         '你知道如何设置问卷调查', '你会使用用户体验地图相关工具'
@@ -1284,7 +1254,7 @@ li {
                 
                 {
                     id: 19,
-                    title: '图形设计',
+                    title: '一些风格小招',
                     maxPoints: 2,
                     rankDescriptions: [
                         '你能够创建一个平衡的、信息清晰表达的布局', '你理解如何设计协调的、和内容合理搭配而独特的用户界面。'
@@ -1313,7 +1283,7 @@ li {
                 
                 {
                     id: 20,
-                    title: '图形设计工具(PS/AI)',
+                    title: '自由式滑板',
                     dependsOn: [19],
                     links: [{
                         label: '100个图形设计师工具|平面设计类',
@@ -1331,7 +1301,7 @@ li {
                 
                 {
                     id: 21,
-                    title: '产品原型(Axure/Balsamiq)',
+                    title: '来点儿道具',
                     dependsOn: [18],
                     links: [{
                         label: '使用快速原型法进行更好更快的产品设计',
@@ -1356,7 +1326,7 @@ li {
                 
                 {
                     id: 22,
-                    title: '精通用户体验设计',
+                    title: '各种地形刷街',
                     dependsOn: [19, 21],
                     description: '你能够将项目需求转换为一个有吸引力的设计，以促进用户体验。',
                     stats: [{
@@ -1370,7 +1340,7 @@ li {
                 
                 {
                     id: 23,
-                    title: '可用性测试',
+                    title: '进入碗池',
                     dependsOn: [22],
                     links: [{
                         label: '24个网站可用性测试工具大名单',
@@ -1392,7 +1362,7 @@ li {
 
                 {
                     id: 24,
-                    title: '服务器运维',
+                    title: 'NO COMPLY',
                     links: [{
                         label: 'Web服务器比较 Wiki',
                         url: 'http://en.wikipedia.org/wiki/Comparison_of_web_server_software'
@@ -1414,7 +1384,7 @@ li {
                 
                 {
                     id: 25,
-                    title: '应用发布',
+                    title: 'VARIAL KICKFLIP',
                     dependsOn: [24],
                     links: [{
                         label: 'SSL证书安装 Installation',
@@ -1443,7 +1413,7 @@ li {
 
                 {
                     id: 26,
-                    title: '精通网页开发',
+                    title: '和朋友们一起玩',
                     dependsOn: [4, 5, 10, 15, 22, 25],
                     links: [{
                         label: 'Web Development Wiki',
@@ -1605,30 +1575,6 @@ li {
                         skill.points(skill.maxPoints);
                     });
                 };
-
-                //UNUSED: Selected skill if we switch to an "info pane" layout
-                /*self.selectedSkillId = ko.observable();
-			self.selectedSkill = ko.computed(function(){
-				return ko.utils.arrayFirst(self.skills(), function(skill){
-					return skill.id == self.selectedSkillId();
-				});
-			});
-			self.selectSkill = function(skill){
-				self.selectedSkillId(skill.id);
-			};
-			self.deselectSkill = function(){
-				self.selectedSkillId(null);
-			};
-			self.skillAllocations = ko.computed(function(){
-				var a = [];
-				ko.utils.arrayForEach(self.skills(), function(skill){
-					if(skill.hasPoints()) a.push({
-						id: skill.id
-						, points: skill.points()
-					});
-				});
-				return a;
-			});*/
 
                 //Hash functions
                 self.hash = ko.computed(function() {
