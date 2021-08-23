@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="<%=basePath%>">
+    <meta name="viewport" content="user-scalable,width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title></title>
+    <!--公用-->
+    <link rel="stylesheet" href="common/css/base.css">
+    <script src="common/js/3.7.2/echarts.min.js"></script>
+    <script src="common/js/template/art-template/template-web.js"></script>
+    <script src="common/js/jquery.js"></script>
+   <!--自定义-->
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+    <script src="js/loadEcharts.js"></script>
+    <script>
+        $(function () {
+            main.init();
+            Echarts.init();
+        });
+    </script>
+</head>
+<body>
+<div class="body">
+    <div class="head-box">
+        <div class="logout-box"></div>
+        <div class="link-box"></div>
+        Arrivals救援监测大屏
+        <div class="time-box">2021年8月27日</div>
+    </div>
+    <div class="main">
+        <!--left-->
+        <div class="col">
+            <!--巡查视频问题-->
+            <div class="col-box1">
+               <div class="col-title">用户出入信息</div>
+                <div class="col-main">
+                    <ul class="xcspwt-box js-xcspwt">
+                        <li>
+                            <span>陈子鸿</span>
+                            <span title="南京信息工程大学地铁站1号出口监控点">进入深水区</span>
+                            <span title="视频信号不稳定">视频信号稳定</span>
+                        </li>
+                        <li>
+                            <span>徐朝越</span>
+                            <span title="南京信息工程大学地铁站1号出口监控点">进入泳池</span>
+                            <span title="视频信号不稳定">视频信号稳定</span>
+                        </li>
+                        <li>
+                            <span>邹国庆</span>
+                            <span title="南京信息工程大学地铁站1号出口监控点">进入泳池</span>
+                            <span title="视频信号不稳定">视频信号稳定</span>
+                        </li>
+                        <li>
+                            <span>余波</span>
+                            <span title="南京信息工程大学地铁站1号出口监控点">进入深水区</span>
+                            <span title="视频信号不稳定">视频信号稳定</span>
+                        </li>
+                        <li>
+                            <span>查丽萍</span>
+                            <span title="南京信息工程大学地铁站1号出口监控点">进入浅水区</span>
+                            <span title="视频信号不稳定">视频信号稳定</span>
+                        </li>
+                        <li>
+                            <span>臭臭</span>
+                            <span title="南京信息工程大学地铁站1号出口监控点">离开泳池</span>
+                            <span title="视频信号不稳定">视频信号稳定</span>
+                        </li>
+                        <li>
+                            <span>小乌龟</span>
+                            <span title="南京信息工程大学地铁站1号出口监控点">欢快游泳</span>
+                            <span title="视频信号不稳定">视频信号稳定</span>
+                        </li>
+                        <li>
+                            <span>小乌龟</span>
+                            <span title="南京信息工程大学地铁站1号出口监控点">欢快游泳</span>
+                            <span title="视频信号不稳定">视频信号稳定</span>
+                        </li>
+                        <li>
+                            <span>小乌龟</span>
+                            <span title="南京信息工程大学地铁站1号出口监控点">欢快游泳</span>
+                            <span title="视频信号不稳定">视频信号稳定</span>
+                        </li>
+                        <li>
+                            <span>小乌龟</span>
+                            <span title="南京信息工程大学地铁站1号出口监控点">欢快游泳</span>
+                            <span title="视频信号不稳定">视频信号稳定</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--巡查视频问题统计-->
+            <div class="col-box1">
+                <div class="col-title">用户心率信息收集</div>
+                <div class="col-main">
+                    <!--视频问题统计-->
+                    <ul class="spwtzgtj-box">
+                        <li>
+                            <span>正常运动状态</span>
+                            <span>234</span>
+                        </li>
+                        <li>
+                            <span>偏高</span>
+                            <span>34</span>
+                        </li>
+                        <li>
+                            <span>正常休息状态</span>
+                            <span>200</span>
+                        </li>
+                    </ul>
+                    <div class="spwttj-echarts" id="spwttjEchart">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--center-->
+        <div class="col">
+            <!--预警信息推送-->
+            <div class="col-box1">
+                <ul class="zpsl-box">
+                   <li>
+                       <span>总计预警</span>
+                       <span>60条</span>
+                   </li>
+                   <li>
+                       <span>救援成功率</span>
+                       <span>100%</span>
+                   </li>
+                </ul>
+                <div class="col-title">预警信息推送</div>
+                <div class="col-main js-tjxxtsxq" style="height: calc(100% - 190px);margin-top: 10px">
+                    <div class="yjxxts-box">
+                        <img src="img/12.png">
+                    </div>
+                    <div class="yjxxts-box">
+                        <img src="img/12.png">
+                    </div>
+                    <div class="yjxxts-box">
+                        <img src="img/12.png">
+                    </div>
+                </div>
+            </div>
+            <!--预警信息统计-->
+            <div class="col-box1">
+                <div class="col-title">预警信息统计</div>
+                <div class="col-main ">
+                    <ul class="yjxxtj-title js-tab">
+                        <li class="on">有人统计</li>
+                        <li>无人统计</li>
+                    </ul>
+                    <div class="yjxxtj-box">
+                        <ul class="wgxc-box js-wgxcBox">
+                            <li>
+                                <div class="wgxc-bar"><span class="wgxc-sl-bar" style="height:30%"></span></div>
+                                <div class="wgxcName">浅水区</div>
+                            </li>
+                            <li>
+                                <div class="wgxc-bar"><span class="wgxc-sl-bar" style="height:59%"></span></div>
+                                <div class="wgxcName">深水区</div>
+                            </li>
+                            <li>
+                                <div class="wgxc-bar"><span class="wgxc-sl-bar" style="height:41%"></span></div>
+                                <div class="wgxcName">岸边</div>
+                            </li>
+                            <li>
+                                <div class="wgxc-bar"><span class="wgxc-sl-bar" style="height:20%"></span></div>
+                                <div class="wgxcName">其它</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--right-->
+        <div class="col">
+            <!--全市监控点位统计-->
+            <div class="col-box1">
+                <div class="col-title">
+                    泳池人数流量
+                </div>
+                <div class="col-main">
+                    <div class="qsjk-box" id="qsjkdwEcharts">
+                        <!--全市监控点位-->
+                    </div>
+                </div>
+            </div>
+            <!--系统公告&资源下载-->
+            <div class="col-box1">
+                <div class="col-title">
+                    <ul class="xtggzlxz-box js-tab js-xtggzlxz">
+                        <li>系统公告</li>
+                    </ul>
+                </div>
+                <div class="col-main" style=" height:calc(100% - 75px);padding:20px 0;overflow: hidden">
+                    <!--系统公告-->
+                    <div class="xtggzlxz-main">
+                        <ul class="xcspwt-box js-xtggScroll">
+                            <li>
+                                中秋节泳池开放时间：9：00-17：00
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--预警信息推送弹框-->
+        <div class="yjxxts-tkbox js-yjxxtsTkbox">
+            <img src="img/12.png">
+            <div class="yjxxts-xqbox">
+                <div class="col-title">详情</div>
+                <div class="yjxxts-xqmain">
+                    <table>
+                        <tr>
+                            <td>监控点位</td>
+                            <td>西南角</td>
+                        </tr>
+                        <tr>
+                            <td>预警时间</td>
+                            <td>2021-8-26</td>
+                        </tr>
+                        <tr>
+                            <td>预警类型</td>
+                            <td>孩童游泳圈脱落</td>
+                        </tr>
+                        <tr>
+                            <td>预警状态</td>
+                            <td>已处理</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
