@@ -12,6 +12,6 @@
 
    软工二学uml的时候画的
 
-4. [三行诗]([https://chenzihong-gavin.github.io/skillTree/swimming/](https://chenzihong-gavin.github.io/skillTree/aCupofPoetry))
+4. [三行诗](https://chenzihong-gavin.github.io/skillTree/aCupofPoetry)
 
    用react写的第一个项目，生活有诗和远方
