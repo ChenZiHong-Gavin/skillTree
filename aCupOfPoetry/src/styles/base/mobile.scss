@@ -1,0 +1,82 @@
+@media (max-height: 600px) {
+    .space-xl { height: 60px; }
+    .space-l { height: 40px; }
+    .space-m { height: 20px; }
+    .space-s { height: 10px; }
+    #input-wrap { margin-top: 20px; height: calc(100% - 80px);}
+    #wordcount { bottom: 20px; }
+}
+
+@media (max-width: 680px) {
+    .buttons i.icon-fullscreen { display: none; }
+    html { font-size: .75em; }
+    body.home, body.write { overflow: auto; }
+    .logo
+        {
+        width: 270px;
+        .mark
+            {
+            width: 90px; height: 90px;
+            box-shadow: inset 0px 0px 0px 12px $red, inset 0px 0px 0px 18px $white;
+            }
+        h1
+            {
+            width: calc(100% - 100px);
+            left: 100px;
+            font-size: $xlarge;
+            span:first-child { top: -2px; }
+            span:nth-child(2) { top: 30px;}
+            span:last-child { top: 64px; }
+            }
+        &.small { width: 210px; }
+        }
+    .btn
+        {
+        padding: 8px 28px;
+        font-size: $reg;
+        &.btn-small { padding: 6px 18px; }
+        }
+    .writeButton .session-chooser
+        {
+        bottom: 40px;
+        font-size: 1em;
+        }
+    .write_button_wrap.small .session_chooser { bottom: 28px; }
+    .tweet {margin: 30px 20px 0 70px;}
+    .tweet:after {font-size: $xxlarge;}
+    .Welcome .accolades
+        {
+        background-size: calc(100% - 40px);
+        left: 0px;
+        bottom: 0;
+        }
+
+    #input-wrap
+        {
+        margin: 20px 0;
+        height: calc(100% - 60px);
+        }
+    #die
+        {
+        .content {margin: 0px; padding: 20px; box-sizing: border-box;}
+        }
+    div.splitscreen .left, div.splitscreen .right
+        {
+        height: auto;
+        width: 100%;
+        border: none;
+        padding: 0;
+        left: auto;
+        position: static;
+        }
+    form
+        {
+        max-width: 300px;
+        margin: 0px auto;
+        }
+    .Welcome, .content { padding: 0px 20px; box-sizing: border-box;}
+    .editor, .app.night-mode .editor {margin-top: 50px;}
+    #hardcore { font-size: 200pt;}
+}
+
+

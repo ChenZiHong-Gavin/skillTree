@@ -1,0 +1,42 @@
+.progress, .app.night-mode .progress
+// 夜间模式
+    {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 4px;
+    width: 100%;
+
+    & div
+        {
+        height: 4px;
+        background: $blue;
+        // 向框添加阴影
+        box-shadow: -1px 1px 4px fade-out($blue, .5);
+        // 过渡速度
+        transition: all .3s ease-out;
+        }
+    &.danger div
+        {
+        background: $red;
+        box-shadow: -1px 1px 4px fade-out($red, .5);
+        }
+    &.won
+        {
+        div
+          {
+          background: $green;
+          height: 8px;
+          box-shadow: 0px 2px 5px fade-out($green, .7);
+          }
+        top: -8px;
+        opacity: 0;
+        transition: all 1s 3s ease-out;
+        }
+    }
+
+.app.night-mode .progress div
+    {
+    background: $light-blue;
+    box-shadow: -1px 1px 4px fade-out($light-blue, .5);
+    }

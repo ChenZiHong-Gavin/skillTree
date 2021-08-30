@@ -1,0 +1,79 @@
+.Help {
+    @keyframes PulseCaret
+        {
+        12%   { opacity: 1; }
+        80%   { opacity: .1; }
+        }
+    // 返回按钮
+    .navButton.backButton:before
+        {
+        content: '\3c';
+        padding: 1px 2px 0 0;
+        width: 18px;
+        height: 19px;
+    }
+
+    h1
+    {
+        text-align: center;
+    }
+
+    p {
+        font-family: Merriweather;
+        text-align: center;
+        font-size: $small;
+        color: $grey;
+        font-weight: 400;
+        line-height: 1.65;
+    }
+    h2 
+    { 
+        margin-top: 2em;
+        color: $grey;
+        text-align: center;
+    }
+    p a
+        {
+        // 链接
+        text-decoration: none;
+        // 原来是红的
+        color: $red;
+        // 鼠标停留时会出现下划线
+        &:hover { text-decoration: underline; }
+        }
+
+    
+    abbr
+        {
+        // 文字下面画虚线
+        text-decoration: none;
+        border-bottom: 1px dashed $light-grey;
+        }
+
+    blockquote
+        {
+        margin: 1em 2em;
+        padding: 0;
+        p
+            {
+            position: relative;
+            text-align: center;
+            i.icon-quote-right, i.icon-quote-left
+                {
+                color: $off-white;
+                font-size: $large;
+                display: inline-block;
+
+                }
+            i.icon-quote-right { vertical-align: -.5em; margin-left: -5px;}
+            i.icon-quote-left { vertical-align: .3em; margin-right: -10px;}
+            }
+        p.author
+            {
+            text-align: right;
+            font-size: $xsmall;
+            opacity: .7;
+            margin: -2.5em 4em 0 0;
+            }
+        }
+}

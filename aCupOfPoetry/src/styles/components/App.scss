@@ -1,0 +1,57 @@
+.content
+    {
+    width: 100%;
+    max-width: 600px;
+    margin: 0px auto;
+    height: calc(100% - 1px);
+    margin: 0px auto;
+    padding-top: 1px;
+    }
+
+
+.app
+    {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: $white;
+    color: $grey;
+    font-weight: 400;
+    transition: box-shadow .1s ease-in;
+    &.danger {
+        box-shadow: inset 0px 0px 40px 2px $red;
+        transition: box-shadow 3s ease-in;
+    }
+
+    .content .writeButton
+        {
+        position: fixed;
+        left: 0;
+        bottom: 40px;
+        width: 100%;
+        }
+
+    &.night-mode
+        {
+        background: $dark;
+        color: $off-white;
+        i.icon-night-mode {transform: rotate(180deg);}
+        }
+
+    .buttons
+        {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 100;
+        font-size: $reg;
+        i { opacity: .2; cursor: pointer; display: inline-block;}
+        i:hover { opacity: 1; }
+        }
+    }
+
+.fullscreen-enabled .app {
+    border-radius: calc(1vw + 1vh);
+}
+
+

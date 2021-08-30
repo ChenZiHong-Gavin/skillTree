@@ -1,0 +1,77 @@
+.Banner {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  top: 20px;
+  perspective: 200px;
+
+  .inner {
+    background-color: white;
+    border: 1px solid $off-white;
+    color: $grey;
+    padding: 12px 16px;
+    border-radius: 7px;
+    box-shadow: 0px 5px 5px -2px #0002;
+    display: flex;
+    align-items: center;
+    line-height: 24px;
+    text-decoration: none;
+    transition: all 150ms ease-in-out, opacity 300ms ease-in,
+      transform 800ms ease-out;
+    transform: translateY(-80px);
+    &:hover {
+      border-color: $off-off-white;
+      box-shadow: 0px 5px 7px -2px #0003;
+    }
+    &.visible {
+      transform: translateY(0px);
+    }
+    &.closed {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    strong {
+      color: $red;
+    }
+    .close {
+      background-color: $white;
+      color: $off-white;
+      text-align: center;
+      transform: rotateZ(45deg);
+      align-self: flex-end;
+      margin-left: 10px;
+      &:hover {
+        color: $red;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background: $red;
+    border-radius: 4px;
+    position: relative;
+    display: inline-block;
+    line-height: 32px;
+    vertical-align: middle;
+    &:after {
+      width: 18px;
+      height: 10px;
+      border: 1px solid #fffefa;
+      color: #fffefa;
+      font-size: 5px;
+      font-weight: 700;
+      line-height: 12px;
+      padding: 10px 0px 0 2px;
+      position: absolute;
+      border-radius: 3px;
+      content: "Don't.";
+      left: 1px;
+      top: 1px;
+    }
+  }
+}
