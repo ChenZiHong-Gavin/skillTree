@@ -1,7 +1,7 @@
 {
   "name": "mdwa",
   "version": "2.5.1",
-  "homepage": "https://chenzihong-gavin.github.io/aCupOfPoetry/",
+  "homepage": "https://chenzihong-gavin.github.io/skillTree/aCupOfPoetry/",
   "private": true,
   "dependencies": {
     "autoprefixer": "7.1.6",
