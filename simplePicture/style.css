@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans Light';
+    letter-spacing: .05em;
+}
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    background-image: linear-gradient(to right,#776e75,#6889c2);
+}
+
+.login-wrapper {
+    background-color: #fff;
+    width: 250px;
+    height: 500px;
+    padding: 0 50px;
+    position: relative;
+    left: 50%;
+    border-radius: 15px;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+.login-wrapper .header {
+    font-size:  30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 200px;
+}
+
+.login-wrapper .form-wrapper .input-item {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px;
+    border-bottom: 2px solid rgb(128,125,125);
+    font-size: 15px;
+    outline: none;
+}
+
+.login-wrapper .form-wrapper .input-item::placeholder {
+    text-transform: uppercase;
+}
+
+.login-wrapper .form-wrapper .btn {
+    text-align: center;
+    padding: 5px;
+    margin-top: 40px;
+    background-image: linear-gradient(to right,#c1cbd7,#8696a7);;
+    color: #fff;
+}
+.login-wrapper .form-wrapper .btn a {
+    text-decoration: none;
+}
+.login-wrapper .form-wrapper .btn a:link {
+    color: #fff;
+} /* 未被访问的链接 */
+.login-wrapper .form-wrapper .btn a:visited {
+    color: #fff;
+} /* 已被访问过的链接 蓝色 */
+.login-wrapper .form-wrapper .btn a:hover {
+    color: #fff;
+} /* 鼠标悬浮在上的链接 蓝色 */
+.login-wrapper .form-wrapper .btn a:active {
+    color: #fff;
+} /* 鼠标点中激活链接 蓝色 */
+
+
+.login-wrapper  .msg {
+    text-align: center;
+    line-height: 80px;
+    white-space: nowrap;
+}
+
+.login-wrapper  .msg a  {
+    text-decoration-line:  none;
+    color: #a6c1ee;
+}

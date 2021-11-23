@@ -19,4 +19,7 @@
 5. [typora主题](https://chenzihong-gavin.github.io/skillTree/maize-night)
 
    给maize写的夜间模式
+   
+6. [韩国美女](https://chenzihong-gavin.github.io/skillTree/simplePicture/index.html)
 
+   软院web第一次作业，瀑布流图片展示功能
